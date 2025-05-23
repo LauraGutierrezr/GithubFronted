@@ -7,8 +7,11 @@
 
 ## PROCEDIMIENTO PARCIAL FRONTED:
 
-**Como primer paso creo un repositorio privado en mi Git**
-
+**Como primer paso creo un repositorio mi Git**
+      
+      En este caso voy a manejar dos repositorios uno para el back y otro para el fronted
+      
+      [image](https://github.com/user-attachments/assets/eaac4268-9fbb-4459-b90f-5fc98c95e74c)
 
 
 **En Sprint Initializr creo un nuevo proyecto llamado parcial02 en maven**
@@ -37,24 +40,14 @@ Teniendo los archivos básicos para crear el fronted
 
 **Resultado gráfico Fronted**
 
+Para la creación del front la realizaré con HTML desde mi local, .HTML tomé una plantilla básica de mi parcial anterior para crearla a las necesidades de este parcial final
 
 
 
-
-Para la creación del front la realizaré con HTML desde mi local, teniendo en cuenta los archivos base que son .css, .js , .HTML tomé una plantilla básica para crearla a las necesidades del parcial y su finalidad
-
-
-![image](https://github.com/user-attachments/assets/9e08e7e3-8fdf-4836-a721-b26de769b553)
 
 
       ```
      El Fronted ya está listo, es funcional y practico, cumpliendo los requisitos dados en el problema.
-
-       -Permite registrar compra
-       -Verificar productos
-       -Registrar el pago
-       -Buscar compras anteriormente realizadas por el usuario con su Id correspondiente
-     Falta la integración con la base de datos mongo
       ```
 
 
@@ -63,40 +56,7 @@ Para la creación del front la realizaré con HTML desde mi local, teniendo en c
 --Se puede observar en la imagen la estructura de los archivos creados, en la carpeta parcial02, están almacenados los archivos que contienen las clases de test, el archivo pom.xml, src y target
 
 
-
-
-
-
-
-'--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------'
-
-
-
-**BACKEND**
-
-
-**Modifico el archivo pom.xml integrando mongo, añadiendo Jacoco**
-
-  --Jcoco
-
-
-![image](https://github.com/user-attachments/assets/0978c850-a5c5-427e-8c48-ea53beb4fc76)
-
-
-  --MongoDB
-
-  
-![image](https://github.com/user-attachments/assets/b8e5092e-53ac-411d-8aae-c1cd5c08ef28)
-
-
-
-  --Creacion clases
-
-
-
-![image](https://github.com/user-attachments/assets/590ffeaa-f493-456b-bd0e-752aecd87ca0)
-
-
+![image](https://github.com/user-attachments/assets/55e4bcf1-4d23-45c3-b82a-ee3f341d8a57)
 
 
 
