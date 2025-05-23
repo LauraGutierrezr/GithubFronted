@@ -109,3 +109,41 @@ Para la creación del front la realizaré con HTML desde mi local, teniendo en c
 
 ![image](https://github.com/user-attachments/assets/bab77537-c998-4efa-abd5-5461c68af5f3)
 
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ECI Salud Vital</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>ECI Salud Vital - Especialidades</h1>
+  <div id="especialidades" class="grid"></div>
+
+  <div id="detalle-especialidad" class="hidden">
+    <img id="img-detalle" />
+    <p id="descripcion"></p>
+    <p id="doctor"></p>
+    <p id="ubicacion"></p>
+    <button onclick="mostrarFormulario()">Programar Cita</button>
+  </div>
+
+  <div id="formulario-cita" class="hidden">
+    <h2>Programar Cita</h2>
+    <form onsubmit="programarCita(event)">
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <input type="text" id="cedula" placeholder="Cédula" required />
+      <input type="email" id="correo" placeholder="Correo electrónico" required />
+      <input type="date" id="fecha" required />
+      <div id="resumen-cita"></div>
+      <button type="submit">Confirmar Cita</button>
+    </form>
+    <p id="error" class="error"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
