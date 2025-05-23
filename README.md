@@ -11,7 +11,9 @@
       
       En este caso voy a manejar dos repositorios uno para el back y otro para el fronted
       
-[image](https://github.com/user-attachments/assets/eaac4268-9fbb-4459-b90f-5fc98c95e74c)
+![image](https://github.com/user-attachments/assets/7be61fe2-e40e-498b-a6f2-813d19e00d92)
+
+![image](https://github.com/user-attachments/assets/d8258878-2644-4bf6-a704-b0463d0aa429)
 
 
 **En Sprint Initializr creo un nuevo proyecto llamado parcial02 en maven**
