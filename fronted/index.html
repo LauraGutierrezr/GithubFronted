@@ -1,48 +1,37 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ECICredit - Pagos</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ECI Salud Vital</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Registrar Pago</h1>
-        <form id="paymentForm">
-            <label for="usuarioId">ID de Usuario:</label>
-            <input type="text" id="usuarioId" required><br>
+  <h1>ECI Salud Vital - Especialidades</h1>
+  <div id="especialidades" class="grid"></div>
 
-            <h2>Productos</h2>
-            <div id="products">
-                <div class="product">
-                    <label for="productoNombre">Nombre del Producto:</label>
-                    <input type="text" class="productoNombre" required><br>
+  <div id="detalle-especialidad" class="hidden">
+    <img id="img-detalle" />
+    <p id="descripcion"></p>
+    <p id="doctor"></p>
+    <p id="ubicacion"></p>
+    <button onclick="mostrarFormulario()">Programar Cita</button>
+  </div>
 
-                    <label for="productoValorUnitario">Valor Unitario:</label>
-                    <input type="number" class="productoValorUnitario" required><br>
+  <div id="formulario-cita" class="hidden">
+    <h2>Programar Cita</h2>
+    <form onsubmit="programarCita(event)">
+      <input type="text" id="nombre" placeholder="Nombre completo" required />
+      <input type="text" id="cedula" placeholder="Cédula" required />
+      <input type="email" id="correo" placeholder="Correo electrónico" required />
+      <input type="date" id="fecha" required />
+      <div id="resumen-cita"></div>
+      <button type="submit">Confirmar Cita</button>
+    </form>
+    <p id="error" class="error"></p>
+  </div>
 
-                    <label for="productoCantidad">Cantidad:</label>
-                    <input type="number" class="productoCantidad" required><br><br>
-                </div>
-            </div>
-
-            <button type="button" onclick="addProduct()">Añadir Otro Producto</button><br><br>
-            <button type="submit">Registrar Pago</button>
-        </form>
-
-        <hr>
-
-        <h1>Consultar Pagos</h1>
-        <form id="consultForm">
-            <label for="consultaUsuarioId">ID de Usuario:</label>
-            <input type="text" id="consultaUsuarioId" required><br>
-            <button type="submit">Consultar Pagos</button>
-        </form>
-
-        <div id="paymentInfo"></div>
-    </div>
-
-    <script src="assets/js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
